@@ -1,0 +1,23 @@
+IPFS hash of the deployment:
+- CIDv0: `QmTc9oJFYAwPhhTQi5NnPteHcvSYp7ZWiQ2V1WoanZjHU3`
+- CIDv1: `bafybeicoime5g2ighwvdo4r4x32cc3zpa7khfzrke4aym7gv7wbnl2jika`
+
+The latest release is always mirrored at [app.uniswap.org](https://app.uniswap.org).
+
+You can also access the Uniswap Interface from an IPFS gateway.
+**BEWARE**: The Uniswap interface uses [`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to remember your settings, such as which tokens you have imported.
+**You should always use an IPFS gateway that enforces origin separation**, or our hosted deployment of the latest release at [app.uniswap.org](https://app.uniswap.org).
+Your Uniswap settings are never remembered across different URLs.
+
+IPFS gateways:
+- https://bafybeicoime5g2ighwvdo4r4x32cc3zpa7khfzrke4aym7gv7wbnl2jika.ipfs.dweb.link/
+- [ipfs://QmTc9oJFYAwPhhTQi5NnPteHcvSYp7ZWiQ2V1WoanZjHU3/](ipfs://QmTc9oJFYAwPhhTQi5NnPteHcvSYp7ZWiQ2V1WoanZjHU3/)
+
+### 5.119.1 (2025-11-20)
+
+
+### Bug Fixes
+
+* **web:** show txns hash on activity table for all swaps until protocol data improves (#25649) 8571bc3
+
+

@@ -1,0 +1,10 @@
+pluginManagement { includeBuild("../../../node_modules/@react-native/gradle-plugin") }
+plugins { id("com.facebook.react.settings") }
+extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand(['bunx', 'rnef', 'config', '-p', 'android']) }
+rootProject.name = 'Uniswap'
+include ':app'
+includeBuild('../../../node_modules/@react-native/gradle-plugin')
+
+apply from: new File(["node", "--print", "require.resolve('../../../node_modules/expo/package.json')"].execute(null, rootDir).text.trim(), "../scripts/autolinking.gradle")
+useExpoModules()
+
